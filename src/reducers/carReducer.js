@@ -15,7 +15,7 @@ export const initialState = {
   ]
 };
 export const carReducer = (state = initialState, action) => {
-  console.log(state, action);
+  console.log("carReducer: ", state, action);
   switch (action.type) {
     case "REMOVE_FEATURE":
       return {

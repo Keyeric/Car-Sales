@@ -7,7 +7,7 @@ import Total from "./components/Total";
 import { connect } from "react-redux";
 
 const App = props => {
-  // console.log(props);
+  console.log("App.js props: ", props);
   return (
     <div className="boxes">
       <div className="box">

@@ -3,7 +3,9 @@ import { removeFeature } from "../actions/carActions";
 import { connect } from "react-redux";
 
 const AddedFeature = props => {
-  console.log("AddedFeature props: ", props);
+  console.log("props: ", props);
+  console.log("props.feature: ", props.feature);
+  console.log("props.features: ", props.features);
   return (
     <li>
       {/* Add an onClick to run a function to remove a feature */}

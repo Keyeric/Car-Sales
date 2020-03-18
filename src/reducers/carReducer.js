@@ -19,7 +19,12 @@ export const carReducer = (state = initialState, action) => {
   switch (action.type) {
     case "REMOVE_FEATURE":
       return {
-        ...state
+        ...state,
+        additionalPrice: action.payload.price - state.additionalPrice,
+        car: {
+          ...state.car,
+          features: [...state.car.features]
+        }
       };
     case "BUY_ITEM":
       return {
